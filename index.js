@@ -14,9 +14,6 @@ module.exports = {
     "require": true
   },
   "parser": "babel-eslint",
-  "plugins": [
-    "prettier"
-  ],
   "rules": {
     "arrow-parens": 0,
     "class-methods-use-this": 0,
