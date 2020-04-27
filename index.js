@@ -1,96 +1,83 @@
 module.exports = {
-
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "extends": [
-    "airbnb"
-  ],
-  "globals": {
-    "$": true,
-    "fetch": true,
-    "module": true,
-    "require": true
-  },
-  "parser": "babel-eslint",
-  "rules": {
-    "arrow-parens": 0,
-    "class-methods-use-this": 0,
-    "comma-dangle": 0,
-    "function-paren-newline": 0,
-    "global-require": 0,
-    "import/extensions": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/no-unresolved": 0,
-    "import/prefer-default-export": 0,
-    "indent": [
-      2,
-      4,
-      {
-        "SwitchCase": 1
-      }
-    ],
-    "jsx-a11y/anchor-is-valid": 1,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "jsx-a11y/no-static-element-interactions": 0,
-    "max-len": [
-      2,
-      120,
-      2,
-      {
-        "ignoreComments": false,
-        "ignoreUrls": true
-      }
-    ],
-    "new-cap": [
-      2,
-      {
-        "capIsNew": false,
-        "newIsCap": true
-      }
-    ],
-    "newline-per-chained-call": 0,
-    "no-class-assign": 0,
-    "no-else-return": 0,
-    "no-return-assign": 0,
-    "no-unused-vars": [
-      2,
-      {
-        "args": "all",
-        "argsIgnorePattern": "^_",
-        "vars": "local",
-        "varsIgnorePattern": "^_"
-      }
-    ],
-    "object-curly-newline": 0,
-    "prefer-destructuring": 1,
-    "react/button-has-type": [
-      2,
-      {
-        "button": true,
-        "submit": true,
-        "reset": true
-      }
-    ],
-    "react/destructuring-assignment": 0,
-    "react/jsx-filename-extension": 0,
-    "react/jsx-one-expression-per-line": 0,
-    "react/jsx-indent": [
-      2,
-      4
-    ],
-    "react/jsx-indent-props": [
-      2,
-      4
-    ],
-    "react/jsx-no-target-blank": 0,
-    "react/no-typos": 0,
-    "react/require-default-props": 0,
-    "space-before-function-paren": [
-      2,
-      "never"
-    ]
-  }
-
+    env: {
+        browser: true,
+        node: true,
+    },
+    extends: ['airbnb', 'eslint-config-prettier'],
+    globals: {
+        $: true,
+        fetch: true,
+        module: true,
+        require: true,
+    },
+    parser: 'babel-eslint',
+    rules: {
+        'arrow-parens': 0,
+        'class-methods-use-this': 0,
+        'comma-dangle': 0,
+        'function-paren-newline': 0,
+        'global-require': 0,
+        'import/extensions': 0,
+        'import/no-extraneous-dependencies': 0,
+        'import/no-unresolved': 0,
+        'import/prefer-default-export': 0,
+        indent: [
+            2,
+            4,
+            {
+                SwitchCase: 1,
+            },
+        ],
+        'jsx-a11y/anchor-is-valid': 1,
+        'jsx-a11y/click-events-have-key-events': 0,
+        'jsx-a11y/no-static-element-interactions': 0,
+        'max-len': [
+            2,
+            120,
+            2,
+            {
+                ignoreComments: false,
+                ignoreUrls: true,
+            },
+        ],
+        'new-cap': [
+            2,
+            {
+                capIsNew: false,
+                newIsCap: true,
+            },
+        ],
+        'newline-per-chained-call': 0,
+        'no-class-assign': 0,
+        'no-else-return': 0,
+        'no-return-assign': 0,
+        'no-unused-vars': [
+            2,
+            {
+                args: 'all',
+                argsIgnorePattern: '^_',
+                vars: 'local',
+                varsIgnorePattern: '^_',
+            },
+        ],
+        'object-curly-newline': 0,
+        'prefer-destructuring': 1,
+        'react/button-has-type': [
+            2,
+            {
+                button: true,
+                submit: true,
+                reset: true,
+            },
+        ],
+        'react/destructuring-assignment': 0,
+        'react/jsx-filename-extension': 0,
+        'react/jsx-one-expression-per-line': 0,
+        'react/jsx-indent': [2, 4],
+        'react/jsx-indent-props': [2, 4],
+        'react/jsx-no-target-blank': 0,
+        'react/no-typos': 0,
+        'react/require-default-props': 0,
+        'space-before-function-paren': [2, 'never'],
+    },
 };
