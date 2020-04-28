@@ -79,6 +79,9 @@ module.exports = {
         'react/no-typos': 0,
         'react/require-default-props': 0,
         'space-before-function-paren': [2, 'never'],
-        camelcase: ['error', { allow: ['UNSAFE_componentWillMount', 'UNSAFE_componentWillReceiveProps'] }],
+        camelcase: [
+            'error',
+            { properties: 'never', allow: ['UNSAFE_componentWillMount', 'UNSAFE_componentWillReceiveProps'] },
+        ],
     },
 };
